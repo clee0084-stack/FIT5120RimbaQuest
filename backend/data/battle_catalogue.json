@@ -6,7 +6,7 @@
     "Runtime version 2.0 uses HP plus turn Energy instead of dice rolls; source_* fields retain the original reference numbers for traceability.",
     "Battle actions use fixed costs: Basic Attack costs 0 Energy, active slots cost 1 and 2 Energy, and the hard-quiz slot costs 4 Energy.",
     "A successful action restores 2 Energy up to the 8-Energy cap. Timed-out turns skip without recharge.",
-    "The second mover receives a tiered opening shield to reduce turn-order advantage: 4 with no unlocked skills, then 9, 10 or 13 Shield when the highest unlocked slot is 1, 2 or 3.",
+    "The second mover receives a tiered opening shield to reduce turn-order advantage: 3 with no unlocked skills, then 7, 8 or 10 Shield when the highest unlocked slot is 1, 2 or 3.",
     "Wildlife matches use six server-selected habitats with different attack and defence bonuses: Rainforest, Mangrove, Wetland, Grassland, Coastal and Montane.",
     "Medium slot abilities are tuned one damage point above the previous Iteration 2 baseline so their 2-Energy cost remains useful without crowding out hard-quiz skills.",
     "Animal traits inspire fictional game effects. Pixel sprites are stylized, not reference photographs."
