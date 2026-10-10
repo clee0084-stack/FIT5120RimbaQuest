@@ -22,6 +22,11 @@ export interface WildlifeCombatant {
   max_energy: number;
   shield?: number;
   habitat_advantage?: boolean;
+  habitat_bonus?: {
+    attack_percent: number;
+    defence_percent: number;
+    theme?: string;
+  } | null;
   /** Mammal, Bird, Reptile or Butterfly. */
   category?: string;
   role?: string;

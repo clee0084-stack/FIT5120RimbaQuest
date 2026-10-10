@@ -3,6 +3,7 @@ import { Image, ImageStyle, StyleSheet, Text, View } from "react-native";
 import { BATTLE_IMAGES } from "../../../../constants/images";
 import { FONTS } from "../../../../constants/fonts";
 import { GAME_COLORS } from "../../../common/game/gameTheme";
+import { habitatBonusEffectText } from "../shared/battleText";
 
 export function HabitatTip({ habitat }: { habitat: string }) {
   return (
@@ -14,7 +15,7 @@ export function HabitatTip({ habitat }: { habitat: string }) {
       />
       <Text style={styles.text}>
         <Text style={styles.bold}>Tip:</Text> a {habitat} card would have had
-        +20% here.
+        {" "}{habitatBonusEffectText(habitat)} here.
       </Text>
     </View>
   );

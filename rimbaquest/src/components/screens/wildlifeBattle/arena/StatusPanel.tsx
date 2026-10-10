@@ -5,13 +5,10 @@ import { BATTLE_IMAGES } from "../../../../constants/images";
 import { FONTS } from "../../../../constants/fonts";
 import { GAME_COLORS } from "../../../common/game/gameTheme";
 import { WildlifeCombatant } from "../../../../types/wildlifeMatch";
+import { habitatBonusSummary } from "../shared/battleText";
 import { Tag } from "./Tag";
 
 const INK = GAME_COLORS.ink;
-
-function habitatBonusLabel(habitat: string): string {
-  return `${habitat === "Rainforest" ? "Forest" : habitat} bonus +20%`;
-}
 
 export function StatusPanel({
   combatant,
@@ -103,7 +100,9 @@ export function StatusPanel({
               style={styles.bonusIcon as ImageStyle}
               resizeMode="contain"
             />
-            <Text style={styles.bonusText}>{habitatBonusLabel(habitat)}</Text>
+            <Text style={styles.bonusText} numberOfLines={1}>
+              {habitatBonusSummary(habitat, combatant.habitat_bonus)}
+            </Text>
           </View>
         ) : (
           <Text style={styles.noBonusText}>No habitat bonus</Text>
